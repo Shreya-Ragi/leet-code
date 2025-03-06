@@ -31,7 +31,7 @@ public:
                 currc = s[i];
             } 
             else sub += 1;
-            if(i == s.size()-1) groups.push_back({s.back(), sub});
+            if(i == s.size()-1) groups.push_back({s[i], sub});
         }
         for(string word : words){
             char currc = word[0];
@@ -44,7 +44,7 @@ public:
                     currc = word[i];
                 } 
                 else sub += 1;
-                if(i == word.size()-1) wordgroups.push_back({word.back(), sub});
+                if(i == word.size()-1) wordgroups.push_back({word[i], sub});
             }
             if(groups.size() != wordgroups.size()){
                 count--;
