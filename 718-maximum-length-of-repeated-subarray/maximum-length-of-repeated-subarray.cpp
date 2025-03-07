@@ -15,11 +15,6 @@ public:
                 if(DP[i][j] > max) max = DP[i][j];
             }
         }
-        // for(int i=0; i<nums1.size(); i++){
-        //     for(int j=i; j<nums2.size(); j++){
-        //         cout << DP[i][j] << " ";
-        //     }
-        // }
         return max;
     }
 };
